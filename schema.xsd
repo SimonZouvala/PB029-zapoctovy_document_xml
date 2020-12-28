@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/schema"
+    xmlns:tns="http://xml.netbeans.org/schema/schema"
+    elementFormDefault="qualified">
+
+    
+    <xsd:element name="adresar">
+        <xsd:complexType>
+            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                <xsd:element name="osoba" type="osoba-type"/>
+            </xsd:choice>
+            <xsd:attribute name="id" type="xsd:integer" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:complexType name="osoba-type">
+        <xsd:all>
+            <xsd:element name="jmeno" type="xsd:string"/>
+            <xsd:element name="prijmeni" type="xsd:string"/>
+            <xsd:element name="kontakty" type="kontakt-type" minOccurs="0"/>
+            <xsd:element name="adrese" type="adresa-type" minOccurs="0"/>
+            <xsd:element name="poznamky" type="poznamky-type" minOccurs="0" /> 
+        </xsd:all>
+    </xsd:complexType>
+    
+    <xsd:complexType name="kontakt-type">
+        <xsd:all>
+            
+        </xsd:all>
+    </xsd:complexType>
+    
+    
+</xsd:schema>
