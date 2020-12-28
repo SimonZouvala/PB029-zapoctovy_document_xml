@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://xml.netbeans.org/schema/schema"
-    xmlns:tns="http://xml.netbeans.org/schema/schema"
-    elementFormDefault="qualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
     
     <xsd:element name="adresar">
@@ -11,25 +8,92 @@
             <xsd:choice minOccurs="0" maxOccurs="unbounded">
                 <xsd:element name="osoba" type="osoba-type"/>
             </xsd:choice>
-            <xsd:attribute name="id" type="xsd:integer" use="required"/>
         </xsd:complexType>
-    </xsd:element>
+    </xsd:element> 
     
     <xsd:complexType name="osoba-type">
-        <xsd:all>
+        <xsd:sequence>
             <xsd:element name="jmeno" type="xsd:string"/>
             <xsd:element name="prijmeni" type="xsd:string"/>
-            <xsd:element name="kontakty" type="kontakt-type" minOccurs="0"/>
-            <xsd:element name="adrese" type="adresa-type" minOccurs="0"/>
+            <xsd:element name="kontakty" type="kontakty-type" minOccurs="0"/>
+            <xsd:element name="adresy" type="adresy-type" minOccurs="0"/>
             <xsd:element name="poznamky" type="poznamky-type" minOccurs="0" /> 
-        </xsd:all>
+        </xsd:sequence>
+         <xsd:attribute name="id" type="xsd:integer" use="required"/>
     </xsd:complexType>
+    
+    
+    
+    <xsd:complexType name="kontakty-type">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="kontakt" type="kontakt-type"/>
+        </xsd:choice>
+    </xsd:complexType>
+    
     
     <xsd:complexType name="kontakt-type">
+        <xsd:sequence>
+            <xsd:element name="mail" type="mail-type" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="telefon" type="telefon-type" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="web" type="web-type" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="dalsi"  minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="xsd:string">
+                            <xsd:attribute name="nazev" type="xsd:string" use="required"/>
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="typ" type="typ-enum"/>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="mail-type">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[^@]+@[^\.]+\..+"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="typ-enum">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="osobní"/>
+            <xsd:enumeration value="pracovní"/>
+            <xsd:enumeration value="jiná"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    
+    <xsd:simpleType name="telefon-type">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[+]?([0-9]){9,}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="web-type">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="w{3}\.([a-z]+)*\.([a-z]+/?)*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+     <xsd:complexType name="adresy-type">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="adresa" type="adresa-type"/>
+        </xsd:choice>
+    </xsd:complexType>
+    
+    <xsd:complexType name="adresa-type">
         <xsd:all>
-            
+            <xsd:element name="ulice" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="cp" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="psc" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="mesto" type="xsd:string"/>
         </xsd:all>
     </xsd:complexType>
     
-    
+    <xsd:complexType name="poznamky-type">
+        <xsd:sequence>
+            <xsd:element name="poznamka" type="xsd:string" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
 </xsd:schema>
