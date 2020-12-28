@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<adresar 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schema.xsd">
+<osoba id="1">
+        <jmeno>Gordon</jmeno>
+        <prijmeni>Shumway</prijmeni>
+        <kontakty>
+            <kontakt>
+                <mail>alien@life.form</mail>
+                <telefon>+011282101756</telefon>
+                <web>www.alf.cz</web>
+            </kontakt>
+        </kontakty>
+        <adresy>
+            <adresa>
+                <ulice>Melmac</ulice>
+                <cp>12</cp>
+                <psc>00006</psc>
+                <mesto>Hydra-Centaurus</mesto>
+            </adresa>
+        </adresy>
+        <poznamky>
+            <poznamka>Má rád kočky.</poznamka>
+            <poznamka>Nejoblíbenější je KSR.</poznamka>
+        </poznamky>
+    </osoba>
+    <osoba id="2">
+        <jmeno>Wiliam</jmeno>
+        <prijmeni>Tanner</prijmeni>
+        <kontakty>
+            <kontakt typ="pracovní">
+                <mail>tanner.william@work.com</mail>
+            </kontakt>
+        </kontakty>
+        <poznamky>
+            <poznamka>Skrývá mimozemťana</poznamka>
+        </poznamky>
+    </osoba>
+    <osoba id="3">
+        <jmeno>Kate</jmeno>
+        <prijmeni>Tannerová</prijmeni>
+        <adresy>
+            <adresa>
+                <mesto>Lost Angeles</mesto>
+            </adresa>
+        </adresy>
+    </osoba>
+    <osoba id="4">
+        <jmeno>Brian</jmeno>
+        <prijmeni>Tanner</prijmeni>
+        <kontakty>
+            <kontakt typ="osobní">
+                <mail>brain@budy.com</mail>
+                <dalsi nazev="skype">brian@tanner</dalsi>
+            </kontakt>
+        </kontakty>
+    </osoba>
+    <osoba id="5">
+        <jmeno>Lynn</jmeno>
+        <prijmeni>Tannerová</prijmeni>
+        <poznamky>
+            <poznamka> Zjistit kontakt</poznamka>
+        </poznamky>
+    </osoba>
+    
+    
+</adresar>
