@@ -6,26 +6,9 @@ and open the template in the editor.
 -->
 
 
-<adresar>
-    <osoba id="">
-        <jmeno></jmeno>
-        <prijmeni></prijmeni>
-        <kontakty>
-            <mail></mail>
-            <telefon></telefon>
-            <web></web>
-            <dalsi name=""></dalsi>
-        </kontakty>
-        <adresa>
-            <ulice></ulice>
-            <cp></cp>
-            <psc></psc>
-            <město></město>
-        </adresa>
-        <poznamky>
-            <poznamka></poznamka>
-        </poznamky>
-    </osoba>
-    
+<adresar 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schema.xsd">
+
     
 </adresar>
