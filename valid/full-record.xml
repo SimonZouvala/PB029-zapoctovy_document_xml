@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<adresar 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schema.xsd">
+    <osoba id="1">
+        <jmeno>Gordon</jmeno>
+        <prijmeni>Shumway</prijmeni>
+        <kontakty>
+            <kontakt>
+                <mail>alien@life.form</mail>
+                <telefon>+011282101756</telefon>
+                <web>www.alf.cz</web>
+                <dalsi nazev="skype">mimozemšťan</dalsi>
+            </kontakt>
+            <kontakt typ="pracovní">
+                <mail>tanner.willie@work.com</mail>
+                <telefon>+011282101756</telefon>
+                <web>www.alf.cz</web>
+                <dalsi nazev="icq">9958115</dalsi>
+            </kontakt>
+            <kontakt typ="osobní">
+                 <mail>brian@budy.com</mail>
+                <telefon>+011282101756</telefon>
+                <web>www.alf.cz</web>
+                <dalsi nazev="skype">briantanner</dalsi>
+            </kontakt>
+            <kontakt typ="jiná">
+                 <mail>kate.tanner@other.com</mail>
+                <telefon>+011282101756</telefon>
+                <web>www.alf.cz</web>
+                <dalsi nazev="skype">katetanner</dalsi>
+            </kontakt>
+        </kontakty>
+        <adresy>
+            <adresa>
+                <ulice>Melmac</ulice>
+                <cp>12</cp>
+                <psc>00006</psc>
+                <mesto>Hydra-Centaurus</mesto>
+            </adresa>
+        </adresy>
+        <poznamky>
+            <poznamka>Má rád kočky.</poznamka>
+            <poznamka>Nejoblíbenější je KSR.</poznamka>
+        </poznamky>
+    </osoba>
+    
+    
+</adresar>
