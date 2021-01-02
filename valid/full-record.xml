@@ -9,9 +9,7 @@ and open the template in the editor.
 <adresar 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schema.xsd">
-    <osoba id="1">
-        <jmeno>Gordon</jmeno>
-        <prijmeni>Shumway</prijmeni>
+    <osoba jmeno="Gordon" prijmeni="Shumway">
         <kontakty>
             <kontakt>
                 <mail>alien@life.form</mail>
