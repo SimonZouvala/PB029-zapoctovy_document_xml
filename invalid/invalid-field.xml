@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<adresar 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schema.xsd">
+<osoba jmeno="Gordon" prijmeni="Shumway">
+    <mimozemstan>ANO</mimozemstan>
+        <kontakty>
+            <kontakt>
+                <mail>alien@life.form</mail>
+                <telefon>+011282101756</telefon>
+                <web>www.serial-alf.webnode.cz</web>
+            </kontakt>
+        </kontakty>
+        <adresy>
+            <adresa>
+                <ulice>Melmac</ulice>
+                <cp>12</cp>
+                <psc>00006</psc>
+                <mesto>Hydra-Centaurus</mesto>
+            </adresa>
+        </adresy>
+        <poznamky>
+            <poznamka>Má rád kočky.</poznamka>
+            <poznamka>Nejoblíbenější je KSR.</poznamka>
+        </poznamky>
+    </osoba>
+    <osoba jmeno="Wiliam" prijmeni="Tanner">
+        <kontakty>
+            <kontakt typ="pracovní">
+                <mail>tanner.william@work.com</mail>
+            </kontakt>
+        </kontakty>
+        <poznamky>
+            <mimozemstan>NE</mimozemstan>
+            <poznamka>Skrývá mimozemťana</poznamka>
+        </poznamky>
+    </osoba>
+
+    
+    
+</adresar>
