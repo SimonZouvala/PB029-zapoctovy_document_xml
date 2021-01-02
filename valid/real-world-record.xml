@@ -14,7 +14,7 @@ and open the template in the editor.
             <kontakt>
                 <mail>alien@life.form</mail>
                 <telefon>+011282101756</telefon>
-                <web>www.alf.cz</web>
+                <web>www.serial-alf.webnode.cz</web>
             </kontakt>
         </kontakty>
         <adresy>
@@ -55,7 +55,7 @@ and open the template in the editor.
             </kontakt>
         </kontakty>
     </osoba>
-    <osoba jmeno="Lynn" prijmeni="Tannerová">
+    <osoba jmeno="Lynn" prijmeni="Aannerová">
         <poznamky>
             <poznamka> Zjistit kontakt</poznamka>
         </poznamky>
