@@ -9,9 +9,7 @@ and open the template in the editor.
 <adresar 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schema.xsd">
-<osoba id="1">
-        <jmeno>Gordon</jmeno>
-        <prijmeni>Shumway</prijmeni>
+<osoba jmeno="Gordon" prijmeni="Shumway">
         <kontakty>
             <kontakt>
                 <mail>alien@life.form</mail>
@@ -32,9 +30,7 @@ and open the template in the editor.
             <poznamka>Nejoblíbenější je KSR.</poznamka>
         </poznamky>
     </osoba>
-    <osoba id="2">
-        <jmeno>Wiliam</jmeno>
-        <prijmeni>Tanner</prijmeni>
+    <osoba jmeno="Wiliam" prijmeni="Tanner">
         <kontakty>
             <kontakt typ="pracovní">
                 <mail>tanner.william@work.com</mail>
@@ -44,18 +40,14 @@ and open the template in the editor.
             <poznamka>Skrývá mimozemťana</poznamka>
         </poznamky>
     </osoba>
-    <osoba id="3">
-        <jmeno>Kate</jmeno>
-        <prijmeni>Tannerová</prijmeni>
+    <osoba jmeno="Kate" prijmeni="Tannerová">
         <adresy>
             <adresa>
                 <mesto>Lost Angeles</mesto>
             </adresa>
         </adresy>
     </osoba>
-    <osoba id="4">
-        <jmeno>Brian</jmeno>
-        <prijmeni>Tanner</prijmeni>
+    <osoba jmeno="Brian" prijmeni="Tanner">
         <kontakty>
             <kontakt typ="osobní">
                 <mail>brain@budy.com</mail>
@@ -63,9 +55,7 @@ and open the template in the editor.
             </kontakt>
         </kontakty>
     </osoba>
-    <osoba id="5">
-        <jmeno>Lynn</jmeno>
-        <prijmeni>Tannerová</prijmeni>
+    <osoba jmeno="Lynn" prijmeni="Tannerová">
         <poznamky>
             <poznamka> Zjistit kontakt</poznamka>
         </poznamky>
