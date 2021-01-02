@@ -71,7 +71,7 @@
     
     <xsd:simpleType name="web-type">
         <xsd:restriction base="xsd:string">
-            <xsd:pattern value="w{3}\.([a-z]+)*\.([a-z]+/?)*"/>
+            <xsd:pattern value="w{3}\.(([a-z\-]+)*\.([a-z]+[/]?)*)*"/>
         </xsd:restriction>
     </xsd:simpleType>
     
