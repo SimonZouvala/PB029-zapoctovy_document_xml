@@ -13,13 +13,12 @@
     
     <xsd:complexType name="osoba-type">
         <xsd:sequence>
-            <xsd:element name="jmeno" type="xsd:string"/>
-            <xsd:element name="prijmeni" type="xsd:string"/>
             <xsd:element name="kontakty" type="kontakty-type" minOccurs="0"/>
             <xsd:element name="adresy" type="adresy-type" minOccurs="0"/>
             <xsd:element name="poznamky" type="poznamky-type" minOccurs="0" /> 
         </xsd:sequence>
-         <xsd:attribute name="id" type="xsd:integer" use="required"/>
+         <xsd:attribute name="jmeno" type="xsd:string" use="required"/>
+         <xsd:attribute name="prijmeni" type="xsd:string" use="required"/>
     </xsd:complexType>
     
     
